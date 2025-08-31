@@ -259,15 +259,15 @@ Exemple:
 **IMPORTANT**
     - Cand declaram vectorul de frecventa, trebuie sa fim atenti la marimea lui. Mereu marimea lui o sa fie destul de mare cat sa poata contine cel mai mare numar care poate sa apara in multimea careia ii calculam frecventa. Mai jos cateva exemple:
 
-        - Pentru multimea: `[1,2,3,5,8,9]`
-            - Vectorul de frecventa arata: 
-            `int frecventa[10]` -> deoarece avem nevoie sa putem scrie in `frecventa[9]`
-        - Pentru multimea: `[2,5,99,123,124]`
-            - Vectorul de frecventa arata: 
-            `int frecventa[125]` -> deoarece avem nevoie sa putem scrie in `frecventa[124]`
-        - Pentru multimea: `[2,5,99,4,3,2,8,12,34]`
-            - Vectorul de frecventa arata: 
-            `int frecventa[100]` -> deoarece avem nevoie sa putem scrie in `frecventa[100]`
+- Pentru multimea: `[1,2,3,5,8,9]`
+    - Vectorul de frecventa arata: 
+    `int frecventa[10]` -> deoarece avem nevoie sa putem scrie in `frecventa[9]`
+- Pentru multimea: `[2,5,99,123,124]`
+    - Vectorul de frecventa arata: 
+    `int frecventa[125]` -> deoarece avem nevoie sa putem scrie in `frecventa[124]`
+- Pentru multimea: `[2,5,99,4,3,2,8,12,34]`
+    - Vectorul de frecventa arata: 
+    `int frecventa[100]` -> deoarece avem nevoie sa putem scrie in `frecventa[100]`
 
 * Exemplu: Se citeste un fisier care contine pana la 100000 de numere. Sa se afiseze cel mai mare numar ce poate fi create din cifrele tuturor numerelor:
     ```c++
