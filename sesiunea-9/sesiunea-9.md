@@ -461,7 +461,7 @@ Atunci când definim o funcție, trebuie doar să specificăm tipul întoarcerii
         }
 
         int esteVocala(char ch) {
-            return strchr("aeiou", ch) != nullptr;
+            return strchr("aeiou", ch) != NULL;
         }
 
         int esteConsoana(char ch) {
