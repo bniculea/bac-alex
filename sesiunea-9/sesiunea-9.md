@@ -271,7 +271,7 @@ Atunci când definim o funcție, trebuie doar să specificăm tipul întoarcerii
             int secunde;
             cout << "Introduceti numarul total de secunde: ";
             cin >> secunde;
-            convertSecondsToFriendlyFormat(secunde);
+            convertesteSecunde(secunde);
 
             return 0;
         }
