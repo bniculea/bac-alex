@@ -3,6 +3,7 @@
 ## Agenda
 
 - Rezolvare Model Propus 2026
+- Ce putem face mai bine
 - Exercitii pentru acasa
 
 ## Rezolvare Model Propus 2026
@@ -370,3 +371,291 @@
             }
 
       ```
+
+## Ce putem face mai bine
+- Aici o sa gasesti chestiile pe care le-am  observat si pe care le putem imbunatatii astfel incat sa iti fie mai usor la examen
+
+1. Nu este gresit sa copiezi cod pe net sau sa folosesti cod generat de chat gpt dar este gresit daca faci asta fara sa il intelegi si fara sa incerci tu singur sa il scrii.
+
+2. Chat GPT sau orice al tool similar este util atunci cand il folosim nu pentru a crea de la 0 ci atunci cand ii aratam ce a facut si ne explica de ce nu merge si/sau cum putem sa avem o rezolvare mai clara
+
+3. Chat GPT sau orice alt tool similar poate sa halucineze de aceea nu trebuie sa luam 100% de bun ce scrie acolo
+
+4. Atunci cand nu intelegi un concept pe care l-am discutat in trecut, te poti uita in pdf-urile pe care le-am trimis. Exact asta e motivul pentru care iti trimit la finalul sedintei u n fisier cu ceea ce am rezolvat. Este foarte util ca tu sa mai treci cel putin o data prin el singur si sa vezi ca ai inteles, iar daca nu, sa putem relua acel topic.
+
+5. Orice varianta rezolvata, fa-o mai intai pe foaie dupa care verifica-te pe PC dar nu in notepad.. ci in Clion/Codeblocks altfel nu ai idee daca l-ai facut ok sau nu.
+
+
+6. Nu trata superficial problemele, citeste cu  atentie enuntul
+
+7. Fa cat mai multe exercitii altfel uiti si ce ai facut inainte.. dupa cum ai vazut, desi am stat si am discutat despre functii cam la fiecare sedinta, conceptele de apel de functie si parametrii iti pareau putin nefamiliare.
+
+Stiu ca pare ca is multe de facut insa nu e asa, putem sa recuperam daca iti dai interesul ca la fiecare exercitiu sa il faci cat de bine poti tu.Si sa faci cat mai multe exercitii. Lucru valabil pentru toate materiile de bac.
+
+Spor!
+
+
+
+## Exercitii pentru acasa
+
+1. Rezolvare varianta Bac August 2024 => https://www.pbinfo.ro/resurse/9dc152/examene/2025/E_D_Informatica_2025_sp_MI_C_var_04_LRO.pdf
+
+
+-------------------------------------------
+
+2. Exercitii recapitulative functii prelucrare siruri.
+
+Nota: aici gasesti functiile de prelucrare siruri cu tot cu exemple: https://cplusplus.com/reference/cstring/ si alegi functia de care ai nevoie
+
+#### 🔹 Problema 1
+Scrie un program C++ care să copieze un șir de caractere în alt șir, folosind funcția `strcpy`.
+
+**Exemplu date de intrare:**
+```
+informatica
+```
+
+**Exemplu date de ieșire:**
+```
+Copia sirului este: informatica
+```
+
+---
+
+#### 🔹 Problema 2
+Scrie un program C++ care să concateneze două șiruri de caractere, folosind funcția `strcat`.
+
+**Exemplu date de intrare:**
+```
+info
+matica
+```
+
+**Exemplu date de ieșire:**
+```
+Rezultatul concatenarii: informatica
+```
+
+---
+
+#### 🔹 Problema 3
+Scrie un program C++ care să compare două șiruri și să afișeze dacă sunt egale sau care este mai mare lexicografic, folosind funcția `strcmp`.
+
+**Exemplu date de intrare:**
+```
+ana
+anca
+```
+
+**Exemplu date de ieșire:**
+```
+Primul sir este mai mic lexicografic decat al doilea.
+```
+
+---
+
+#### 🔹 Problema 4
+Scrie un program C++ care să copieze doar primele `n` caractere dintr-un șir în altul, folosind funcția `strncpy`.
+
+**Exemplu date de intrare:**
+```
+informatica 5
+```
+
+**Exemplu date de ieșire:**
+```
+Primele 5 caractere copiate: infor
+```
+
+---
+
+#### 🔹 Problema 5
+Scrie un program C++ care să concateneze doar primele `n` caractere din al doilea șir la primul șir, folosind funcția `strncat`.
+
+**Exemplu date de intrare:**
+```
+info matica 4
+```
+
+**Exemplu date de ieșire:**
+```
+Rezultatul concatenarii partiale: infomat
+```
+
+---
+
+#### 🔹 Problema 6
+Scrie un program C++ care să verifice dacă un caracter dat se află într-un șir de caractere, folosind funcția `strchr`.
+
+**Exemplu date de intrare:**
+```
+informatica a
+```
+
+**Exemplu date de ieșire:**
+```
+Caracterul 'a' se gaseste in sir.
+```
+
+---
+
+#### 🔹 Problema 7
+Scrie un program C++ care să determine de câte ori apare un anumit caracter într-un șir, folosind funcția `strchr`.
+
+**Exemplu date de intrare:**
+```
+informatica a
+```
+
+**Exemplu date de ieșire:**
+```
+Caracterul 'a' apare de 2 ori.
+```
+
+---
+
+#### 🔹 Problema 8
+Scrie un program C++ care să verifice dacă un șir este subșir al altui șir, folosind funcția `strstr`.
+
+**Exemplu date de intrare:**
+```
+informatica mat
+```
+
+**Exemplu date de ieșire:**
+```
+Al doilea sir este subșir al primului.
+```
+
+---
+
+#### 🔹 Problema 9
+Scrie un program C++ care să șteargă un subșir dintr-un șir dat, dacă acesta apare, folosind funcțiile `strstr`, `strcpy` și `strcat`.
+
+**Exemplu date de intrare:**
+```
+informatica mat
+```
+
+**Exemplu date de ieșire:**
+```
+Sirul dupa stergerea subșirului: inforica
+```
+
+---
+
+#### 🔹 Problema 10
+Scrie un program C++ care să înlocuiască toate aparițiile unui subșir dintr-un șir cu alt subșir, folosind funcțiile `strstr`, `strcpy` și `strcat`.
+
+**Exemplu date de intrare:**
+```
+informatica mat log
+```
+
+**Exemplu date de ieșire:**
+```
+Sirul dupa inlocuire: infologica
+```
+
+---
+
+-------------------------------------------
+
+3. Pentru problemele de mai jos, nu este nevoie sa scrii efectiv codul c++ ci doar sa identifici pasii pe care ii ai de facut impreuna cu ce functii te-ar putea ajuta sa faci asta
+
+#### 🔸 Exercitiul 1
+Scrie un program C++ care citește un text format din mai multe cuvinte și formează un nou șir în care toate cuvintele sunt concatenate într-un singur șir,  
+dar fiecare cuvânt este prescurtat la primele 3 caractere.
+
+**Exemplu date de intrare:**
+```
+informatica este frumoasa
+```
+
+**Exemplu date de ieșire:**
+```
+infestfru
+```
+
+---
+
+#### 🔸 Exercitiul 2
+Scrie un program C++ care citește două propoziții și verifică dacă au vreun cuvânt comun.  
+Dacă există cuvinte comune, acestea se vor afișa separate printr-un spațiu,  
+iar dacă nu există, se va afișa mesajul „Nu exista cuvinte comune.”
+
+**Exemplu date de intrare:**
+```
+ana are mere
+are pere si mere
+```
+
+**Exemplu date de ieșire:**
+```
+are mere
+```
+
+---
+
+#### 🔸 Exercitiul 3
+Scrie un program C++ care citește un text și creează un nou șir care conține doar cuvintele din text ce au lungimea mai mare decât 4 caractere.  
+Cuvintele rezultate se vor separa printr-un singur spațiu.
+
+**Exemplu date de intrare:**
+```
+azi invatam programare in c++
+```
+
+**Exemplu date de ieșire:**
+```
+invatam programare
+```
+
+---
+
+#### 🔸 Exercitiul 4
+Scrie un program C++ care citește un șir de caractere și formează un nou șir ce conține ultimele 2 caractere din fiecare cuvânt.  
+Cuvintele sunt separate printr-un spațiu.
+
+**Exemplu date de intrare:**
+```
+mere pere prune
+```
+
+**Exemplu date de ieșire:**
+```
+re re ne
+```
+
+---
+
+#### 🔸 Exercitiul 5
+Scrie un program C++ care citește o propoziție și construiește un nou șir în care cuvintele sunt aranjate în ordine alfabetică.
+
+**Exemplu date de intrare:**
+```
+ion are mere si pere
+```
+
+**Exemplu date de ieșire:**
+```
+are ion mere pere si
+```
+
+---
+
+#### 🔸 Exercitiul 6
+Scrie un program C++ care citește o propoziție și elimină toate cuvintele care conțin o literă dată.
+
+**Exemplu date de intrare:**
+```
+ana are mere rosii
+a
+```
+
+**Exemplu date de ieșire:**
+```
+mere rosii
+```
+
+---
