@@ -398,7 +398,7 @@ Spor!
 
 ## Exercitii pentru acasa
 
-1. Rezolvare varianta Bac August 2024 => https://www.pbinfo.ro/resurse/9dc152/examene/2025/E_D_Informatica_2025_sp_MI_C_var_04_LRO.pdf
+1. Rezolvare varianta Bac August 2025 => https://www.pbinfo.ro/resurse/9dc152/examene/2025/E_D_Informatica_2025_sp_MI_C_var_04_LRO.pdf
 
 
 -------------------------------------------
