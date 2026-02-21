@@ -1,3 +1,8 @@
+# Sesiunea 18
+
+## Agenda
+ - Rezolvare simulare 2025
+
 ## Rezolvare varianta simulare 2025
 
 ### Subiectul I
@@ -137,7 +142,6 @@
 
             using namespace std;
 
-            int f(int);
 
             int main() {
                 int m, n;
@@ -208,7 +212,7 @@
         //-----------------------------------------
         struct specialist {
             int anAngajare;
-            struct {char CNP[13]; int anNastere;} personal;
+            struct {char CNP[14]; int anNastere;} personal;
         }s[30];
         //------------------------------------------
 
@@ -285,6 +289,7 @@
         int main() {
             int n;
             cin >> n;
+            int exista = 0;
             char cuvinte[n][21];
             for (int i = 0; i < n; i++) {
                 cin >> cuvinte[i];
@@ -293,7 +298,12 @@
             for (int i = 0; i < n-1; i++) {
                 if (esteAsemenea(cuvinte[i], cuvinte[n-1])) {
                     cout << cuvinte[i] << endl;
+                    exista = 1;
                 }
+            }
+
+            if (exista == 0) {
+                cout << "nu exista"
             }
 
             return 0;
@@ -430,3 +440,5 @@
                 return exista;
             }
         ```
+
+
