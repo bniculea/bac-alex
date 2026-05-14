@@ -231,6 +231,62 @@
 - Echivalenta structurilor repetitive
 - Definire si folosire a structurilor repetitive
     - De exemplu sa ai un for care pleaca de la n la 0 si cu pas diferit de 1 (gen din 3 in 3)
+- De retinut
+    - Atunci cand transformam din structura repetitiva cu test initial in structura repetitiva cu test final, neaparat trebuie sa punem o instructiune `daca` inainte de inceputul acesteia, altfel cele doua nu sunt echivalente.
+    - De exemplu se da urmatorul pseudocod
+    ```json
+        citeşte m,n
+        (numere naturale nenule, m≤n)
+        nr<-0;i<-m
+        ┌repetă
+        │ x<-1
+        │┌cât timp x*x<i execută
+        ││ x<-x+1
+        │└■
+        │┌dacă x*x=i atunci nr<-i
+        ││altfel i<-i+1
+        │└■
+        └până când i>n sau nr≠0
+        scrie nr
+    ```
+    - Si se cere  sa se inlocuiasca structura cât timp...execută cu o structură repetitivă cu test final
+    - Atentie mare care este structura ce trebuie inlocuita
+    - Dupa care, rezultatul corect ar fi asa:
+    ```json
+        citeşte m,n
+             (numere naturale nenule, m≤n)
+             nr<-0;i<-m
+            ┌repetă
+            │ x<-1
+            |┌daca x*x<i atunci
+            ││  ┌execută
+            ││  │x<-x+1
+            ││  └■cât timp x*x<i 
+            │└■
+            │┌dacă x*x=i atunci nr<-i
+            ││altfel i<-i+1
+            │└■
+            └până când i>n sau nr≠0
+            scrie nr
+    ```
+    - DAAAR un rezultat invalid ar fi:
+    ```json
+        citeşte m,n
+             (numere naturale nenule, m≤n)
+             nr<-0;i<-m
+            ┌repetă
+            │ x<-1
+            │ ┌execută
+            │ │x<-x+1
+            │ └■cât timp x*x<i 
+            |
+            │┌dacă x*x=i atunci nr<-i
+            ││altfel i<-i+1
+            │└■
+            └până când i>n sau nr≠0
+            scrie nr
+    ```
+    - Ar fi invalid deoarece instructiunea `executa...cat timp` va fi executata si daca x va fi un numar care nu respecta conditia initial (`x*x<i`)
 ### Lucrul cu fisiere
 - Citire din fisiere
     ```c++
